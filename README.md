@@ -33,8 +33,19 @@ Follow the steps below to enable the logging for Sumo Logic.
 4. To enable AviatrixRule logging, select packet logging when configuring gateway security policies. This is done by clicking the gateway of interests at Gateway panel.
 5. To verify if the logs are delivered to the specified Sumo Logic servers, make a user VPN connection through any gateway managed by the controller. At the prompt on Search bar of Sumo Logic, type Aviatrix* and you shall see the Aviatrix logs.
 
-## Sample dashboard
-![Aviatrix_Sumologic_Sample](aviatrix_sumologic_sample.png)
+## Sample dashboards
+
+### Aviatrix - Overview
+![Aviatrix_overview](sample/aviatrix_overview.png)
+
+### Aviatrix - Gateway
+![Aviatrix_gateway](sample/aviatrix_gateway.png)
+
+### Aviatrix - VPN
+![Aviatrix_vpn](sample/aviatrix_vpn.png)
+
+### Aviatrix - Security
+![Aviatrix_security](sample/aviatrix_security.png)
 
 ## Support
 Found a bug or need a feature?
