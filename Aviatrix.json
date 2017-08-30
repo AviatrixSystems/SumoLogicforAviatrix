@@ -2553,7 +2553,7 @@
       "name":"Dropped packets",
       "viewerType":"table",
       "detailLevel":2,
-      "queryString":"AvxRl D:| parse regex \"AvxRl\\s(?<Gateway>\\w+)\"\n| parse \"SRC=* \" as SourceIP\n| parse \"DST=* \" as DestinationIP\n| parse \"DPT=* \" as DestinationPort nodrop\n| parse \"PROTO=* \" as Protocol\n| formatDate(fromMillis(_messageTime), \"MM/dd/yyyy HH:mm:ss\") as time\n| count by time,Gateway,SourceIP,DestinationIP,DestinationPort,Protocol\n| fields time,Gateway,SourceIP,DestinationIP,DestinationPort,Protocol",
+      "queryString":"AvxRl D:| parse regex \"AvxRl\\s(?<Gateway>[^\\s]+)\"\n| parse \"SRC=* \" as SourceIP\n| parse \"DST=* \" as DestinationIP\n| parse \"DPT=* \" as DestinationPort nodrop\n| parse \"PROTO=* \" as Protocol\n| formatDate(fromMillis(_messageTime), \"MM/dd/yyyy HH:mm:ss\") as time\n| count by time,Gateway,SourceIP,DestinationIP,DestinationPort,Protocol\n| fields time,Gateway,SourceIP,DestinationIP,DestinationPort,Protocol",
       "metricsQueries":[],
       "timeRange":"[{\"t\":\"relative\",\"d\":-2592000000}]",
       "x":1,
